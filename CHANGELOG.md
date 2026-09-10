@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-10 (v0.1.2)
+
+Docs only, no code changes. Beautified the README — project-native hero, status badges, and a
+value-first layout. Published package behaviour is unchanged.
+
 ## 2026-09-10 (v0.1.1)
 
 Docs only, no code changes. Generalized the provenance and origin wording in the README and the

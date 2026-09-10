@@ -1,6 +1,6 @@
 {
   "name": "medusa-payment-peach-payments",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Unofficial Peach Payments payment provider for Medusa v2",
   "author": "Max Bissolati",
   "license": "MIT",
