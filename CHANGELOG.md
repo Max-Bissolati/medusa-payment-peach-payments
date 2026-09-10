@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-10 (v0.1.5)
+
+Docs only, no code changes. Updated GitHub username references to lowercase (max-bissolati) after the
+account rename. Old-case URLs still resolve (usernames are case-insensitive), so nothing was broken.
+
 ## 2026-09-10 (v0.1.4)
 
 Docs only, no code changes. README: title rendered in Title Case, the hero's circle motif removed,
@@ -22,7 +27,7 @@ tools, models, and systems used to run them removed. Published package behaviour
 
 ## 2026-07-07 (v0.1.0 published)
 
-First public release. Repo live at github.com/Max-Bissolati/medusa-payment-peach-payments,
+First public release. Repo live at github.com/max-bissolati/medusa-payment-peach-payments,
 package published to npm as medusa-payment-peach-payments@0.1.0 through the release
 workflow with provenance, after a green CI run on Node 20 and 22. A pre-publish leak audit
 (one adversarial reviewer over the working tree, full git history, and the extracted

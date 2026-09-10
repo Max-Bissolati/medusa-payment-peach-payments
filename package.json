@@ -1,17 +1,17 @@
 {
   "name": "medusa-payment-peach-payments",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Unofficial Peach Payments payment provider for Medusa v2",
   "author": "Max Bissolati",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Max-Bissolati/medusa-payment-peach-payments.git"
+    "url": "git+https://github.com/max-bissolati/medusa-payment-peach-payments.git"
   },
   "bugs": {
-    "url": "https://github.com/Max-Bissolati/medusa-payment-peach-payments/issues"
+    "url": "https://github.com/max-bissolati/medusa-payment-peach-payments/issues"
   },
-  "homepage": "https://github.com/Max-Bissolati/medusa-payment-peach-payments#readme",
+  "homepage": "https://github.com/max-bissolati/medusa-payment-peach-payments#readme",
   "keywords": [
     "medusa-plugin",
     "medusa-plugin-integration",

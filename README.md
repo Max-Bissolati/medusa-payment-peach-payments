@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Max-Bissolati/medusa-payment-peach-payments/main/assets/readme/hero.svg" width="100%" alt="Medusa Payment Peach Payments. A hardened Peach Payments Checkout V2 provider for Medusa v2." />
+<img src="https://raw.githubusercontent.com/max-bissolati/medusa-payment-peach-payments/main/assets/readme/hero.svg" width="100%" alt="Medusa Payment Peach Payments. A hardened Peach Payments Checkout V2 provider for Medusa v2." />
 
 <p>
 <img src="https://img.shields.io/npm/v/medusa-payment-peach-payments?style=flat-square&color=cb3837" alt="npm version" />
