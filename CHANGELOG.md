@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-10 (v0.1.3)
+
+Docs only, no code changes. Removed the animated typing banner from the README.
+
 ## 2026-09-10 (v0.1.2)
 
 Docs only, no code changes. Beautified the README — project-native hero, status badges, and a

@@ -11,8 +11,6 @@
 <img src="https://img.shields.io/badge/Peach%20Payments-Checkout%20V2-ff6f00?style=flat-square" alt="Peach Payments Checkout V2" />
 </p>
 
-<img src="https://readme-typing-svg.demolab.com/?font=IBM+Plex+Mono&size=18&duration=3800&pause=900&color=6E7681&center=true&vCenter=true&width=680&height=46&lines=Verify%20the%20signature%2C%20then%20re-confirm%20via%20%2Fstatus;Amount-integrity%20gate%2C%20fail%20closed;A%20declined%20refund%20can%20still%20be%20HTTP%20200" alt="Verify the signature, then re-confirm via /status; amount-integrity gate, fail closed; a declined refund can still be HTTP 200" />
-
 </div>
 
 An unofficial [Peach Payments](https://peachpayments.com) (Checkout V2) payment provider for
