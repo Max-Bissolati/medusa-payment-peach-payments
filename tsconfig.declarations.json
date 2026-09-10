@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./.medusa/server",
+    "rootDir": "./"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", ".medusa", "dist", "examples", "src/**/__tests__"]
+}

@@ -1,0 +1,6 @@
+/.medusa
+/dist
+node_modules
+*.tgz
+pack.txt
+*.events.jsonl

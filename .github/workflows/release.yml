@@ -1,0 +1,50 @@
+name: release
+
+# Publishes to npm when a version tag (v*) is pushed.
+# Requires an NPM_TOKEN repository secret with publish rights.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  id-token: write # npm provenance
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: check tag matches package version
+        run: |
+          PKG_VERSION=$(node -p "require('./package.json').version")
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          if [ "$PKG_VERSION" != "$TAG_VERSION" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match package.json version $PKG_VERSION" >&2
+            exit 1
+          fi
+      - name: verify publish artifact
+        run: |
+          npm run build
+          npm pack --dry-run 2>&1 | tee pack.txt
+          grep -q ".medusa/server/src/providers/peach/index.js" pack.txt
+          grep -q ".medusa/server/src/providers/peach/index.d.ts" pack.txt
+          if grep -E "^npm notice [0-9.]+[kMB ]+ (src|examples)/" pack.txt; then
+            echo "publish artifact leaks src/ or examples/" >&2
+            exit 1
+          fi
+          if grep -E "\.spec\.(js|ts|d\.ts)" pack.txt; then
+            echo "publish artifact leaks spec files" >&2
+            exit 1
+          fi
+      - run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
