@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-10 (v0.1.4)
+
+Docs only, no code changes. README: title rendered in Title Case, the hero's circle motif removed,
+and em-dashes removed throughout.
+
 ## 2026-09-10 (v0.1.3)
 
 Docs only, no code changes. Removed the animated typing banner from the README.
