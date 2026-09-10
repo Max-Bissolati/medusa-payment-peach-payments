@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-10 (v0.1.1)
+
+Docs only, no code changes. Generalized the provenance and origin wording in the README and the
+extraction verification notes: the verification findings are retained in full, with the specific
+tools, models, and systems used to run them removed. Published package behaviour is unchanged.
+
 ## 2026-07-07 (v0.1.0 published)
 
 First public release. Repo live at github.com/Max-Bissolati/medusa-payment-peach-payments,
